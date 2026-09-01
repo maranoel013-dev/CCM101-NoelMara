@@ -8,9 +8,11 @@ The world's largest public cloud provider — pioneer of modern cloud computing 
 Geographic locations containing multiple data centers (e.g., N. Virginia, Frankfurt, Singapore).
 ### Availability Zones (AZs)
 Physically separate data centers within a Region for fault tolerance.
-
+### Edge Locations
+Used by Amazon CloudFront to cache content closer to end users.
 
 ## Cloud Management Console
+### AWS Management Console
 Web-based graphical interface for creating, configuring, and monitoring cloud resources — the primary tool for beginners and administrators. You can use the AWS Management Console to build and deploy cloud resources like servers, databases, and storage buckets. Once your infrastructure is running, you can monitor its performance and check system health metrics directly from your dashboard. It also allows you to control security by managing user access, passwords, and permissions across your account. Finally, you can use it to track your monthly spending, view detailed bills, and run command-line tasks through a built-in terminal.
 
 ## Four Core Services
