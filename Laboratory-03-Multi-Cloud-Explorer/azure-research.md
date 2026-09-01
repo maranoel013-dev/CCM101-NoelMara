@@ -1,7 +1,7 @@
 # Azure Research
 
 ## Brief Overview
-Comprehensive cloud services with deep integration into the Microsoft enterprise ecosystem, launch on 2010
+Comprehensive cloud services with deep integration into the Microsoft enterprise ecosystem, launched publicly in 2010.
 
 ## Global Infrastructure
 ### Region
