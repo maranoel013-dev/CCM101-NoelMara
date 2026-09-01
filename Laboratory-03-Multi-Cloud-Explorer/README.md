@@ -26,7 +26,4 @@ If this server were moved to the cloud, it's small enough to run on the basic vi
 These services all let you create a small virtual server, similar in size to this one, running Ubuntu or another Linux distribution. Since this server only needs 1 CPU core and about 2GB of RAM, it would fit into the smallest/cheapest instance types offered by any of the three providers.
 
 ## Screenshots
-
 ![KillerCoda Terminal](screenshots/killercoda-terminal.png)
-
-![GitHub Repository](screenshots/github-repository.png)
