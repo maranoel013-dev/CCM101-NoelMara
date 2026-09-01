@@ -4,9 +4,9 @@
 The world's largest public cloud provider — pioneer of modern cloud computing since 2006.
 
 ## Global Infrastructure
-###Regions
+### Regions
 Geographic locations containing multiple data centers (e.g., N. Virginia, Frankfurt, Singapore).
-###Availability Zones (AZs)
+### Availability Zones (AZs)
 Physically separate data centers within a Region for fault tolerance.
 
 
