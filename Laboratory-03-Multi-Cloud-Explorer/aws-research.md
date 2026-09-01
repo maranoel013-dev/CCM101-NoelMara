@@ -30,4 +30,4 @@ Web-based graphical interface for creating, configuring, and monitoring cloud re
 3. Streaming media `(Netflix famously runs on AWS)`
 
 ## Screenshot
- ![AWS Homepage](screenshots/aws-homepage.png)
+![AWS Homepage](screenshots/aws-homepage.png)
