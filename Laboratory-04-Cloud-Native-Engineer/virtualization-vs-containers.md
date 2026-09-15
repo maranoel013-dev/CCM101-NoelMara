@@ -9,4 +9,4 @@
 
 ## Summary
 
-Virtual Machines take longer to start up because each one has to boot its own complete operating system, and this also eats up a lot of RAM. Containers solve this problem by sharing the operating system of the host machine instead of carrying their own, which lets them start up almost instantly while using far fewer resources. Because of this, a server can run many more containers than VMs at the same time. For a client who is dealing with slow boot times and high RAM usage, switching to containers would make their web applications faster to deploy and cheaper to run.
+Starting a Virtual Machine takes a few minutes because it has to load a whole operating system every time, almost like turning on a brand new computer. Containers skip that step by using the operating system that is already running on the server, so they start in just a few seconds. Because containers do not need their own operating system, a single server can run many more containers than VMs at the same time, which would fix the client's slow boot times and wasted RAM. Switching to containers would let their applications start faster and run more efficiently.
