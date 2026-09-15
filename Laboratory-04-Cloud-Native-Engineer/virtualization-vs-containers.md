@@ -1,12 +1,12 @@
 # Virtual Machines vs. Containers
 
-| Category              | Virtual Machines (VMs)                          | Containers                                      |
-|------------------------|--------------------------------------------------|--------------------------------------------------|
-| Architecture           | Each VM runs its own full Guest OS on top of a hypervisor | Containers share the Host OS kernel, isolating only the application and its dependencies |
-| Boot Time              | Minutes (a full OS has to boot)                  | Seconds (no OS to boot, just the app process starts) |
-| Resource Efficiency    | Heavy — each VM needs its own OS, using more RAM and disk | Lightweight — no duplicate OS, so more containers can run on the same hardware |
-| Isolation Level        | Hardware-level isolation (strong separation via hypervisor) | Process-level isolation (isolated but shares the kernel) |
+| Category            | Virtual Machines (VMs)                                                        | Containers                                                                      |
+|----------------------|----------------------------------------------------------------------------------|------------------------------------------------------------------------------------|
+| Architecture         | Each VM comes with its own complete operating system installed inside it         | Containers do not have their own OS. They share the operating system of the host machine |
+| Boot Time            | Takes a few minutes to fully start, since the whole OS has to load first         | Takes just a few seconds to start, since there is no OS to load                    |
+| Resource Efficiency  | Uses a lot of RAM and storage because every VM carries its own OS                | Uses much less RAM and storage since containers do not duplicate the OS            |
+| Isolation Level      | Very strongly separated. Each VM behaves like its own independent computer       | Separated, but more lightly. Containers are like separate rooms sharing the same house (the host OS) |
 
 ## Summary
 
-Traditional VMs require booting a full guest operating system for every instance, which makes them slow to start and heavy on RAM. Containers skip this overhead by sharing the host's kernel, so they start in seconds and use significantly fewer resources. For a client whose main complaint is slow boot times and wasted RAM, migrating web applications to containers would let them run more workloads on the same infrastructure while deploying and scaling much faster. Containers also make it easier to ship consistent environments from development to production.
+Virtual Machines take longer to start up because each one has to boot its own complete operating system, and this also eats up a lot of RAM. Containers solve this problem by sharing the operating system of the host machine instead of carrying their own, which lets them start up almost instantly while using far fewer resources. Because of this, a server can run many more containers than VMs at the same time. For a client who is dealing with slow boot times and high RAM usage, switching to containers would make their web applications faster to deploy and cheaper to run.
