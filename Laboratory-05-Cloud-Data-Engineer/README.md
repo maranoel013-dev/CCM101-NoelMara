@@ -22,8 +22,9 @@ In this lab, I worked as a Cloud Data Engineer at CloudNova Technologies. I depl
 
 ## Skills Learned
 
-- Understanding the difference between block, file, and object storage
-- Running a container with Docker and setting environment variables
-- Mapping ports and opening a service in the browser
-- Creating a bucket and uploading objects in MinIO
-- Writing documentation in Markdown
+- I learned how block, file, and object storage are different.
+- I learned how to start a MinIO server using Docker.
+- I learned how to set a username and password using the -e flag.
+- I learned how to open a server in my browser using a port.
+- I learned how to create a bucket and upload a file.
+- I learned how to write documentation in Markdown.
