@@ -1,1 +1,11 @@
+# Mission Reflection
 
+Writing a `docker-compose.yml` file makes a cloud engineer's job much easier compared to typing commands manually. Instead of running separate `docker run` commands for every container and remembering all the settings each time, everything is written once in a single file. This file can also be reused, shared with teammates, or saved as documentation of exactly how the system is set up, which reduces the chance of mistakes.
+
+I also learned why indentation matters so much in YAML files. YAML uses spaces to show which settings belong to which service, so if a Tab is used instead of spaces, or the spacing is inconsistent, Docker Compose will not be able to read the file correctly and will show an error instead of starting the containers. This showed me that YAML files need to be typed carefully, since even a small spacing mistake can break the whole configuration.
+
+Environment variables like `MYSQL_PASSWORD` were used so that each container could be configured without hardcoding sensitive information directly into the image itself. This way, the same database and app images can be reused with different settings just by changing the environment variables, instead of needing a different image for every configuration. It also keeps credentials easier to manage separately from the application code.
+
+Deploying Nextcloud in just a few minutes felt surprising, especially after seeing how much setup it would normally take to get a web server and a database running and connected to each other. Watching Docker Compose pull both images, create the network, and link the containers together with a single command made me realize how powerful Infrastructure as Code really is compared to setting everything up manually.
+
+My understanding of Cloud Computing has changed a lot since Mission 1. At the start, I only had a basic idea of what "the cloud" meant. Through these labs, I went from learning simple concepts to actually deploying containers, managing their lifecycle, setting up object storage, and now running a full multi-container application. Each mission built on the last one, and I can see how these same skills are used by real cloud engineers to deploy and manage applications at a much bigger scale.
