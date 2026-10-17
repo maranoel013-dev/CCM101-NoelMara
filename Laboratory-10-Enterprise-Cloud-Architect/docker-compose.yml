@@ -1,0 +1,28 @@
+services:
+  database:
+    image: mariadb:10.6
+    restart: always
+    volumes:
+      - db_data:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: cloudnova_root
+      MYSQL_PASSWORD: cloudnova_pass
+      MYSQL_DATABASE: nextcloud_db
+      MYSQL_USER: nextcloud_user
+
+  app:
+    image: nextcloud
+    restart: always
+    ports:
+      - "8080:80"
+    volumes:
+      - nextcloud_data:/var/www/html
+    environment:
+      MYSQL_PASSWORD: cloudnova_pass
+      MYSQL_DATABASE: nextcloud_db
+      MYSQL_USER: nextcloud_user
+      MYSQL_HOST: database
+
+volumes:
+  db_data:
+  nextcloud_data:
